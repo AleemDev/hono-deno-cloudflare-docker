@@ -1,0 +1,8 @@
+{
+    "imports": {
+      "hono": "npm:hono@latest"
+    },
+    "tasks": {
+      "dev": "deno serve --watch --host 0.0.0.0 src/index.ts"
+    }
+  }

@@ -1,0 +1,13 @@
+services:
+  back-end:
+    build: . # or ./back-end
+    container_name: back-end
+    ports:
+      - "8000:8000"
+    volumes:
+      # - ./front-end:/app
+      - .:/app
+      - deno-cache:/deno-dir
+
+volumes:
+  deno-cache:
